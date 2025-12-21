@@ -135,19 +135,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1072,
+                          "duration": 650,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:14.916Z",
+                          "startTime": "2025-12-21T16:22:42.992Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -155,7 +155,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-391dd271ab93db677342",
+                  "id": "231ca1f0f4db3e4958c3-a7a6c1fbc7e53a5ea2b7",
                   "file": "auth/login.spec.ts",
                   "line": 7,
                   "column": 9
@@ -172,19 +172,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 1,
                           "parallelIndex": 1,
                           "status": "passed",
-                          "duration": 974,
+                          "duration": 643,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:14.929Z",
+                          "startTime": "2025-12-21T16:22:42.997Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -192,9 +192,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-f5375bf11e2c26725360",
+                  "id": "231ca1f0f4db3e4958c3-a6f875acac6b011e6b8a",
                   "file": "auth/login.spec.ts",
-                  "line": 35,
+                  "line": 34,
                   "column": 9
                 },
                 {
@@ -209,19 +209,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 2,
                           "parallelIndex": 2,
                           "status": "passed",
-                          "duration": 1128,
+                          "duration": 619,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:14.938Z",
+                          "startTime": "2025-12-21T16:22:43.005Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -229,13 +229,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-98f3c884971593fb1c0a",
+                  "id": "231ca1f0f4db3e4958c3-70a55d6fbaadf485871c",
                   "file": "auth/login.spec.ts",
-                  "line": 50,
+                  "line": 49,
                   "column": 9
                 },
                 {
-                  "title": "should return valid UUID refresh token format",
+                  "title": "should return valid refresh token format",
                   "ok": true,
                   "tags": [
                     "auth",
@@ -246,19 +246,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 3,
                           "parallelIndex": 3,
                           "status": "passed",
-                          "duration": 1098,
+                          "duration": 637,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:14.935Z",
+                          "startTime": "2025-12-21T16:22:42.997Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -266,9 +266,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-8644cbaf3ed88bbfe8e4",
+                  "id": "231ca1f0f4db3e4958c3-fec68362c8aabe87be09",
                   "file": "auth/login.spec.ts",
-                  "line": 66,
+                  "line": 65,
                   "column": 9
                 }
               ]
@@ -276,7 +276,7 @@
             {
               "title": "POST /api/auth/login - Validation Errors",
               "file": "auth/login.spec.ts",
-              "line": 83,
+              "line": 82,
               "column": 8,
               "specs": [
                 {
@@ -291,19 +291,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 4,
                           "parallelIndex": 4,
                           "status": "passed",
-                          "duration": 421,
+                          "duration": 368,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:14.907Z",
+                          "startTime": "2025-12-21T16:22:42.962Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -311,9 +311,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-dfd471e841e19dc59284",
+                  "id": "231ca1f0f4db3e4958c3-0be1ee3511eda2f2b659",
                   "file": "auth/login.spec.ts",
-                  "line": 84,
+                  "line": 83,
                   "column": 9
                 },
                 {
@@ -328,19 +328,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 5,
                           "parallelIndex": 5,
                           "status": "passed",
-                          "duration": 432,
+                          "duration": 373,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:14.940Z",
+                          "startTime": "2025-12-21T16:22:42.960Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -348,9 +348,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-9baaf169f0049e23949c",
+                  "id": "231ca1f0f4db3e4958c3-f27addb96b916620ba18",
                   "file": "auth/login.spec.ts",
-                  "line": 92,
+                  "line": 91,
                   "column": 9
                 },
                 {
@@ -365,19 +365,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 4,
                           "parallelIndex": 4,
                           "status": "passed",
-                          "duration": 202,
+                          "duration": 278,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:15.375Z",
+                          "startTime": "2025-12-21T16:22:43.380Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -385,9 +385,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-40910ce6afb1039473b0",
+                  "id": "231ca1f0f4db3e4958c3-789e7986709ce5c7de22",
                   "file": "auth/login.spec.ts",
-                  "line": 100,
+                  "line": 99,
                   "column": 9
                 }
               ]
@@ -395,7 +395,7 @@
             {
               "title": "POST /api/auth/login - Authentication Errors",
               "file": "auth/login.spec.ts",
-              "line": 107,
+              "line": 106,
               "column": 8,
               "specs": [
                 {
@@ -410,19 +410,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 5,
                           "parallelIndex": 5,
                           "status": "passed",
-                          "duration": 233,
+                          "duration": 279,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:15.402Z",
+                          "startTime": "2025-12-21T16:22:43.380Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -430,9 +430,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-f94ea6800c630b49623e",
+                  "id": "231ca1f0f4db3e4958c3-65bd94cc7f7d65cd15be",
                   "file": "auth/login.spec.ts",
-                  "line": 108,
+                  "line": 107,
                   "column": 9
                 },
                 {
@@ -447,19 +447,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 4,
-                          "parallelIndex": 4,
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
                           "status": "passed",
-                          "duration": 748,
+                          "duration": 433,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:15.593Z",
+                          "startTime": "2025-12-21T16:22:43.678Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -467,9 +467,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-f6ffad759bccc07ba314",
+                  "id": "231ca1f0f4db3e4958c3-e0df8e1e6e5ec41dfda4",
                   "file": "auth/login.spec.ts",
-                  "line": 118,
+                  "line": 117,
                   "column": 9
                 },
                 {
@@ -484,19 +484,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 5,
-                          "parallelIndex": 5,
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
                           "status": "passed",
-                          "duration": 816,
+                          "duration": 432,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:15.651Z",
+                          "startTime": "2025-12-21T16:22:43.679Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -504,9 +504,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-f5f62b04613ee501eedb",
+                  "id": "231ca1f0f4db3e4958c3-651761c505a1b176814d",
                   "file": "auth/login.spec.ts",
-                  "line": 131,
+                  "line": 130,
                   "column": 9
                 }
               ]
@@ -514,7 +514,7 @@
             {
               "title": "POST /api/auth/login - Email Verification",
               "file": "auth/login.spec.ts",
-              "line": 145,
+              "line": 144,
               "column": 8,
               "specs": [
                 {
@@ -529,19 +529,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 1,
-                          "parallelIndex": 1,
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
                           "status": "passed",
-                          "duration": 780,
+                          "duration": 420,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:15.932Z",
+                          "startTime": "2025-12-21T16:22:43.679Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -549,9 +549,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "231ca1f0f4db3e4958c3-fe4eb700f2d60d930c19",
+                  "id": "231ca1f0f4db3e4958c3-8a857cee7621a4a601c0",
                   "file": "auth/login.spec.ts",
-                  "line": 146,
+                  "line": 145,
                   "column": 9
                 }
               ]
@@ -592,19 +592,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
                           "status": "passed",
-                          "duration": 213,
+                          "duration": 251,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:16.043Z",
+                          "startTime": "2025-12-21T16:22:43.683Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -612,7 +612,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "2737f3e4042ace2a33e7-1790c3cd7eca54378b5c",
+                  "id": "2737f3e4042ace2a33e7-1db374f7f2fb2bc3a328",
                   "file": "health/health.spec.ts",
                   "line": 7,
                   "column": 9
@@ -629,19 +629,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 3,
-                          "parallelIndex": 3,
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
                           "status": "passed",
-                          "duration": 202,
+                          "duration": 246,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:16.065Z",
+                          "startTime": "2025-12-21T16:22:43.683Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -649,7 +649,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "2737f3e4042ace2a33e7-c59f6b56122ba6532fde",
+                  "id": "2737f3e4042ace2a33e7-64bd845951893b40ad29",
                   "file": "health/health.spec.ts",
                   "line": 18,
                   "column": 9
@@ -666,19 +666,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 2,
-                          "parallelIndex": 2,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 223,
+                          "duration": 247,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:16.111Z",
+                          "startTime": "2025-12-21T16:22:43.689Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -686,7 +686,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "2737f3e4042ace2a33e7-ea46bc12e09722fd4fc0",
+                  "id": "2737f3e4042ace2a33e7-503d52de0c5fcbc46401",
                   "file": "health/health.spec.ts",
                   "line": 29,
                   "column": 9
@@ -703,19 +703,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 190,
+                          "duration": 187,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:16.272Z",
+                          "startTime": "2025-12-21T16:22:43.955Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -723,7 +723,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "2737f3e4042ace2a33e7-0cd8a7d7df10a1d4305d",
+                  "id": "2737f3e4042ace2a33e7-e45b02618562cb9d5dc7",
                   "file": "health/health.spec.ts",
                   "line": 40,
                   "column": 9
@@ -740,19 +740,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 3,
-                          "parallelIndex": 3,
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
                           "status": "passed",
-                          "duration": 192,
+                          "duration": 188,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:16.282Z",
+                          "startTime": "2025-12-21T16:22:43.955Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -760,7 +760,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "2737f3e4042ace2a33e7-9fa60327e2b00179b9a5",
+                  "id": "2737f3e4042ace2a33e7-dc3fe76e09536a80121e",
                   "file": "health/health.spec.ts",
                   "line": 47,
                   "column": 9
@@ -785,19 +785,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
                           "workerIndex": 2,
                           "parallelIndex": 2,
                           "status": "passed",
-                          "duration": 201,
+                          "duration": 189,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:16.350Z",
+                          "startTime": "2025-12-21T16:22:43.956Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -805,7 +805,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "2737f3e4042ace2a33e7-5fb01d16a44387b2f824",
+                  "id": "2737f3e4042ace2a33e7-31e12869ce24ff02b531",
                   "file": "health/health.spec.ts",
                   "line": 58,
                   "column": 9
@@ -822,19 +822,19 @@
                       "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
-                      "projectId": "staging",
-                      "projectName": "staging",
+                      "projectId": "production",
+                      "projectName": "production",
                       "results": [
                         {
-                          "workerIndex": 4,
-                          "parallelIndex": 4,
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
                           "status": "passed",
-                          "duration": 188,
+                          "duration": 185,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-21T15:10:16.360Z",
+                          "startTime": "2025-12-21T16:22:44.124Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -842,7 +842,7 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "2737f3e4042ace2a33e7-cd23142cec5c009b1e80",
+                  "id": "2737f3e4042ace2a33e7-94335ca93d84f1c74946",
                   "file": "health/health.spec.ts",
                   "line": 68,
                   "column": 9
@@ -856,8 +856,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-21T15:10:13.445Z",
-    "duration": 3300.0560000000005,
+    "startTime": "2025-12-21T16:22:41.341Z",
+    "duration": 2999.446,
     "expected": 18,
     "skipped": 0,
     "unexpected": 0,

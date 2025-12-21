@@ -1,42 +1,42 @@
-<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="3.3000560000000005">
-<testsuite name="auth/login.spec.ts" timestamp="2025-12-21T15:10:13.649Z" hostname="staging" tests="11" failures="0" skipped="0" time="7.904" errors="0">
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should login with valid credentials and return tokens" classname="auth/login.spec.ts" time="1.072">
+<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="2.999446">
+<testsuite name="auth/login.spec.ts" timestamp="2025-12-21T16:22:41.544Z" hostname="production" tests="11" failures="0" skipped="0" time="5.132" errors="0">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should login with valid credentials and return tokens" classname="auth/login.spec.ts" time="0.65">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should return user data without password" classname="auth/login.spec.ts" time="0.974">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should return user data without password" classname="auth/login.spec.ts" time="0.643">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should return valid JWT access token format" classname="auth/login.spec.ts" time="1.128">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should return valid JWT access token format" classname="auth/login.spec.ts" time="0.619">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should return valid UUID refresh token format" classname="auth/login.spec.ts" time="1.098">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Success Cases › should return valid refresh token format" classname="auth/login.spec.ts" time="0.637">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Validation Errors › should return 400 when email is missing" classname="auth/login.spec.ts" time="0.421">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Validation Errors › should return 400 when email is missing" classname="auth/login.spec.ts" time="0.368">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Validation Errors › should return 400 when password is missing" classname="auth/login.spec.ts" time="0.432">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Validation Errors › should return 400 when password is missing" classname="auth/login.spec.ts" time="0.373">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Validation Errors › should return 400 when body is empty" classname="auth/login.spec.ts" time="0.202">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Validation Errors › should return 400 when body is empty" classname="auth/login.spec.ts" time="0.278">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Authentication Errors › should return error for non-existent user" classname="auth/login.spec.ts" time="0.233">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Authentication Errors › should return error for non-existent user" classname="auth/login.spec.ts" time="0.279">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Authentication Errors › should return error for wrong password" classname="auth/login.spec.ts" time="0.748">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Authentication Errors › should return error for wrong password" classname="auth/login.spec.ts" time="0.433">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Authentication Errors › should return error for case-sensitive password" classname="auth/login.spec.ts" time="0.816">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Authentication Errors › should return error for case-sensitive password" classname="auth/login.spec.ts" time="0.432">
 </testcase>
-<testcase name="Login API @auth @smoke › POST /api/auth/login - Email Verification › should handle unverified email appropriately" classname="auth/login.spec.ts" time="0.78">
+<testcase name="Login API @auth @smoke › POST /api/auth/login - Email Verification › should handle unverified email appropriately" classname="auth/login.spec.ts" time="0.42">
 </testcase>
 </testsuite>
-<testsuite name="health/health.spec.ts" timestamp="2025-12-21T15:10:13.649Z" hostname="staging" tests="7" failures="0" skipped="0" time="1.409" errors="0">
-<testcase name="Health Check API @health @smoke › GET /api/health › should return healthy status with all system metrics" classname="health/health.spec.ts" time="0.213">
+<testsuite name="health/health.spec.ts" timestamp="2025-12-21T16:22:41.544Z" hostname="production" tests="7" failures="0" skipped="0" time="1.493" errors="0">
+<testcase name="Health Check API @health @smoke › GET /api/health › should return healthy status with all system metrics" classname="health/health.spec.ts" time="0.251">
 </testcase>
-<testcase name="Health Check API @health @smoke › GET /api/health › should return database connection status" classname="health/health.spec.ts" time="0.202">
+<testcase name="Health Check API @health @smoke › GET /api/health › should return database connection status" classname="health/health.spec.ts" time="0.246">
 </testcase>
-<testcase name="Health Check API @health @smoke › GET /api/health › should return system memory information" classname="health/health.spec.ts" time="0.223">
+<testcase name="Health Check API @health @smoke › GET /api/health › should return system memory information" classname="health/health.spec.ts" time="0.247">
 </testcase>
-<testcase name="Health Check API @health @smoke › GET /api/health › should return Node.js version" classname="health/health.spec.ts" time="0.19">
+<testcase name="Health Check API @health @smoke › GET /api/health › should return Node.js version" classname="health/health.spec.ts" time="0.187">
 </testcase>
-<testcase name="Health Check API @health @smoke › GET /api/health › should respond within acceptable time limit" classname="health/health.spec.ts" time="0.192">
+<testcase name="Health Check API @health @smoke › GET /api/health › should respond within acceptable time limit" classname="health/health.spec.ts" time="0.188">
 </testcase>
-<testcase name="Health Check API @health @smoke › GET /api/v1 › should return API version information" classname="health/health.spec.ts" time="0.201">
+<testcase name="Health Check API @health @smoke › GET /api/v1 › should return API version information" classname="health/health.spec.ts" time="0.189">
 </testcase>
-<testcase name="Health Check API @health @smoke › GET /api/v1 › should have correct content-type header" classname="health/health.spec.ts" time="0.188">
+<testcase name="Health Check API @health @smoke › GET /api/v1 › should have correct content-type header" classname="health/health.spec.ts" time="0.185">
 </testcase>
 </testsuite>
 </testsuites>

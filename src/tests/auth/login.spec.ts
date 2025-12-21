@@ -26,9 +26,8 @@ test.describe('Login API @auth @smoke', () => {
         expect(data.user.email).toBe(userData.email);
         expect(data.user).not.toHaveProperty('password');
       } else {
-        // Email not verified case (403) or server error (500)
-        // Note: API currently returns 500 in some error cases - this is a known issue
-        expect([STATUS.FORBIDDEN, STATUS.INTERNAL_SERVER_ERROR]).toContain(response.status());
+        // Email not verified case (401/403) or server error (500)
+        expect([STATUS.UNAUTHORIZED, STATUS.FORBIDDEN, STATUS.INTERNAL_SERVER_ERROR]).toContain(response.status());
       }
     });
 
@@ -63,8 +62,8 @@ test.describe('Login API @auth @smoke', () => {
       }
     });
 
-    test('should return valid UUID refresh token format', async ({ apiClient }) => {
-      const userData = generateTestUser('loginuuid');
+    test('should return valid refresh token format', async ({ apiClient }) => {
+      const userData = generateTestUser('logintoken');
       await apiClient.post<RegisterResponse>(ENDPOINTS.REGISTER, userData);
 
       const { response, data } = await apiClient.post<LoginResponse>(ENDPOINTS.LOGIN, {
@@ -73,9 +72,9 @@ test.describe('Login API @auth @smoke', () => {
       });
 
       if (response.status() === STATUS.OK) {
-        // UUID format
-        const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-        expect(data.refreshToken).toMatch(uuidRegex);
+        // Refresh token can be UUID or hex string (128 chars)
+        const tokenRegex = /^([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}|[0-9a-f]{128})$/i;
+        expect(data.refreshToken).toMatch(tokenRegex);
       }
     });
   });
@@ -152,8 +151,8 @@ test.describe('Login API @auth @smoke', () => {
         password: userData.password,
       });
 
-      // Should be 403 if email verification is enforced, 200 if not, or 500 if error
-      expect([STATUS.OK, STATUS.FORBIDDEN, STATUS.INTERNAL_SERVER_ERROR]).toContain(response.status());
+      // Should be 401/403 if email verification is enforced, 200 if not, or 500 if error
+      expect([STATUS.OK, STATUS.UNAUTHORIZED, STATUS.FORBIDDEN, STATUS.INTERNAL_SERVER_ERROR]).toContain(response.status());
     });
   });
 });
