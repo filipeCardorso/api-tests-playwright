@@ -1,0 +1,43 @@
+{
+  "name": "api-tests-playwright",
+  "version": "1.0.0",
+  "description": "Automated API tests using Playwright + TypeScript for api-project",
+  "author": "filipeCardorso",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test --grep @auth",
+    "test:users": "playwright test --grep @users",
+    "test:health": "playwright test --grep @health",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report reports/html",
+    "report:allure": "allure serve reports/allure-results",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "allure-playwright": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipeCardorso/api-tests-playwright.git"
+  }
+}

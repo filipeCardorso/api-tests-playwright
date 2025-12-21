@@ -1,0 +1,866 @@
+{
+  "config": {
+    "configFile": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/playwright.config.ts",
+    "rootDir": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/src/fixtures/global-setup.ts",
+    "globalTeardown": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/src/fixtures/global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "development",
+        "name": "development",
+        "testDir": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "staging",
+        "name": "staging",
+        "testDir": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "production",
+        "name": "production",
+        "testDir": "/Users/filipe/ProjetoDeTestes/api-tests-playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth/login.spec.ts",
+      "file": "auth/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login API @auth @smoke",
+          "file": "auth/login.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "POST /api/auth/login - Success Cases",
+              "file": "auth/login.spec.ts",
+              "line": 6,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should login with valid credentials and return tokens",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1072,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:14.916Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-391dd271ab93db677342",
+                  "file": "auth/login.spec.ts",
+                  "line": 7,
+                  "column": 9
+                },
+                {
+                  "title": "should return user data without password",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 974,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:14.929Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-f5375bf11e2c26725360",
+                  "file": "auth/login.spec.ts",
+                  "line": 35,
+                  "column": 9
+                },
+                {
+                  "title": "should return valid JWT access token format",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1128,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:14.938Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-98f3c884971593fb1c0a",
+                  "file": "auth/login.spec.ts",
+                  "line": 50,
+                  "column": 9
+                },
+                {
+                  "title": "should return valid UUID refresh token format",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1098,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:14.935Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-8644cbaf3ed88bbfe8e4",
+                  "file": "auth/login.spec.ts",
+                  "line": 66,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "POST /api/auth/login - Validation Errors",
+              "file": "auth/login.spec.ts",
+              "line": 83,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should return 400 when email is missing",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 421,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:14.907Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-dfd471e841e19dc59284",
+                  "file": "auth/login.spec.ts",
+                  "line": 84,
+                  "column": 9
+                },
+                {
+                  "title": "should return 400 when password is missing",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 432,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:14.940Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-9baaf169f0049e23949c",
+                  "file": "auth/login.spec.ts",
+                  "line": 92,
+                  "column": 9
+                },
+                {
+                  "title": "should return 400 when body is empty",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 202,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:15.375Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-40910ce6afb1039473b0",
+                  "file": "auth/login.spec.ts",
+                  "line": 100,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "POST /api/auth/login - Authentication Errors",
+              "file": "auth/login.spec.ts",
+              "line": 107,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should return error for non-existent user",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 233,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:15.402Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-f94ea6800c630b49623e",
+                  "file": "auth/login.spec.ts",
+                  "line": 108,
+                  "column": 9
+                },
+                {
+                  "title": "should return error for wrong password",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 748,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:15.593Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-f6ffad759bccc07ba314",
+                  "file": "auth/login.spec.ts",
+                  "line": 118,
+                  "column": 9
+                },
+                {
+                  "title": "should return error for case-sensitive password",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 816,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:15.651Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-f5f62b04613ee501eedb",
+                  "file": "auth/login.spec.ts",
+                  "line": 131,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "POST /api/auth/login - Email Verification",
+              "file": "auth/login.spec.ts",
+              "line": 145,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should handle unverified email appropriately",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 780,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:15.932Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "231ca1f0f4db3e4958c3-fe4eb700f2d60d930c19",
+                  "file": "auth/login.spec.ts",
+                  "line": 146,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "health/health.spec.ts",
+      "file": "health/health.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Health Check API @health @smoke",
+          "file": "health/health.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "GET /api/health",
+              "file": "health/health.spec.ts",
+              "line": 6,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should return healthy status with all system metrics",
+                  "ok": true,
+                  "tags": [
+                    "health",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 213,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:16.043Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2737f3e4042ace2a33e7-1790c3cd7eca54378b5c",
+                  "file": "health/health.spec.ts",
+                  "line": 7,
+                  "column": 9
+                },
+                {
+                  "title": "should return database connection status",
+                  "ok": true,
+                  "tags": [
+                    "health",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 202,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:16.065Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2737f3e4042ace2a33e7-c59f6b56122ba6532fde",
+                  "file": "health/health.spec.ts",
+                  "line": 18,
+                  "column": 9
+                },
+                {
+                  "title": "should return system memory information",
+                  "ok": true,
+                  "tags": [
+                    "health",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 223,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:16.111Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2737f3e4042ace2a33e7-ea46bc12e09722fd4fc0",
+                  "file": "health/health.spec.ts",
+                  "line": 29,
+                  "column": 9
+                },
+                {
+                  "title": "should return Node.js version",
+                  "ok": true,
+                  "tags": [
+                    "health",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 190,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:16.272Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2737f3e4042ace2a33e7-0cd8a7d7df10a1d4305d",
+                  "file": "health/health.spec.ts",
+                  "line": 40,
+                  "column": 9
+                },
+                {
+                  "title": "should respond within acceptable time limit",
+                  "ok": true,
+                  "tags": [
+                    "health",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 192,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:16.282Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2737f3e4042ace2a33e7-9fa60327e2b00179b9a5",
+                  "file": "health/health.spec.ts",
+                  "line": 47,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "GET /api/v1",
+              "file": "health/health.spec.ts",
+              "line": 57,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should return API version information",
+                  "ok": true,
+                  "tags": [
+                    "health",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 201,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:16.350Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2737f3e4042ace2a33e7-5fb01d16a44387b2f824",
+                  "file": "health/health.spec.ts",
+                  "line": 58,
+                  "column": 9
+                },
+                {
+                  "title": "should have correct content-type header",
+                  "ok": true,
+                  "tags": [
+                    "health",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "staging",
+                      "projectName": "staging",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 188,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-21T15:10:16.360Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2737f3e4042ace2a33e7-cd23142cec5c009b1e80",
+                  "file": "health/health.spec.ts",
+                  "line": 68,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-21T15:10:13.445Z",
+    "duration": 3300.0560000000005,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
