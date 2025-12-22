@@ -6,7 +6,7 @@ Projeto de automação de testes de API utilizando Playwright + TypeScript.
 
 | Categoria | Tecnologia | Versão | Descrição |
 |-----------|------------|--------|-----------|
-| Framework | Playwright | 1.49+ | API Testing framework |
+| Framework | Playwright | 1.57+ | API Testing framework |
 | Linguagem | TypeScript | 5.x | Strict mode habilitado |
 | Runtime | Node.js | 20+ | JavaScript runtime |
 | Reports | HTML + Allure | - | Relatórios de teste |
@@ -190,27 +190,71 @@ npm run typecheck
 
 ## CI/CD
 
-### GitHub Actions
+### GitHub Actions (`.github/workflows/tests.yml`)
 
-O workflow `.github/workflows/tests.yml` executa:
-
-- **Push para main**: Roda testes completos
-- **Pull Requests**: Roda smoke tests
-- **Manual**: Permite selecionar ambiente
+**Triggers:**
+- **Push para main**: Roda testes completos (smoke + staging)
+- **Pull Requests**: Roda testes completos
+- **Manual (workflow_dispatch)**: Permite selecionar ambiente
 - **Scheduled**: Roda diariamente às 6h UTC
 - **Repository Dispatch**: Disparado pela API após deploy
+
+**Jobs:**
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│                    Smoke Tests (~1m)                            │
+├────────────────────────────────────────────────────────────────┤
+│  1. Checkout código                                             │
+│  2. Setup Node.js 20                                            │
+│  3. npm ci                                                      │
+│  4. Install Playwright                                          │
+│  5. npm run test:smoke -- --project=staging                    │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────┐
+│                Run API Tests (staging) (~1m30s)                 │
+├────────────────────────────────────────────────────────────────┤
+│  1. Checkout código                                             │
+│  2. Setup Node.js 20                                            │
+│  3. npm ci                                                      │
+│  4. Install Playwright                                          │
+│  5. npm test -- --project=staging                              │
+│  6. Upload HTML Report                                          │
+│  7. Upload Test Results                                         │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────┐
+│                    Notify Results                               │
+├────────────────────────────────────────────────────────────────┤
+│  (Apenas quando disparado via repository_dispatch)             │
+│  Reporta status dos testes                                      │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Status Atual:**
+- Smoke Tests: **18 passando**
+- API Tests (staging): 36 passando, 19 falhando (rate limit 429), 26 skipped
+
+> **Nota:** Os testes de register falham em produção devido ao rate limiting (3 req/hora). Isso é comportamento esperado.
 
 ### Integração com API Project
 
 A pipeline da API (`api-project`) dispara os testes após deploy bem-sucedido:
 
 ```yaml
-- name: Trigger Playwright API Tests
-  uses: peter-evans/repository-dispatch@v3
-  with:
-    repository: filipeCardorso/api-tests-playwright
-    event-type: run-api-tests
+trigger-api-tests:
+  needs: build-and-push
+  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  steps:
+    - uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        repository: filipeCardorso/api-tests-playwright
+        event-type: run-api-tests
 ```
+
+> **Importante:** O smoke tests usa `--project=staging` para evitar rodar contra localhost no CI.
 
 ---
 
