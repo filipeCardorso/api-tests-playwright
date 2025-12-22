@@ -92,7 +92,7 @@ export function generateRandomString(length: number): string {
 // ============================================================
 
 export const MESSAGES = {
-  REGISTER_SUCCESS: 'Usuário criado. Verifique seu email.',
+  REGISTER_SUCCESS: 'Verifique seu email para ativar a conta',
   LOGIN_SUCCESS: 'Login realizado com sucesso',
   LOGOUT_SUCCESS: 'Logout realizado com sucesso',
   EMAIL_VERIFIED: 'Email verificado com sucesso',
