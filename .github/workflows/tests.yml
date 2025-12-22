@@ -108,7 +108,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Smoke Tests
-        run: npm run test:smoke
+        run: npm run test:smoke -- --project=staging
         env:
           API_BASE_URL: ${{ env.API_BASE_URL }}
           CI: true
