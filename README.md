@@ -1,3 +1,9 @@
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Allure](https://img.shields.io/badge/Allure_Report-FF5722?style=flat-square&logo=allure&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js_20-339933?style=flat-square&logo=node.js&logoColor=white)
+
 # 🎭 API Tests - Playwright
 
 Automated API tests for [api-project](https://github.com/filipeCardorso/api-project) using Playwright + TypeScript.
